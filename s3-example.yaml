@@ -1,0 +1,10 @@
+# Luis Antonio Soares da Silva ( lui_eu@msn.com / luissoares@outlook.com )
+# Test deploy S3 Bucket
+
+--- # S3 Deploy 
+Resources:
+  BucketTest:
+    Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: PublicRead
+      BucketName: luisantoniotest #bucket name shouldn't contain uppercase characters
