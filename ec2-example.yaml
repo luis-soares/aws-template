@@ -1,0 +1,11 @@
+# Luis Antonio Soares da Silva ( lui_eu@msn.com / luissoares@outlook.com )
+# Test deploy free tier EC2 machine (Check the costs before)
+
+--- # EC2 Deploy 
+Resources:
+  ExampleEC2:
+    Type: AWS::EC2::Instance
+    Properties:
+      AvailabilityZone: us-east-2a  #GET Others (https://docs.aws.amazon.com/pt_br/AWSEC2/latest/UserGuide/using-regions-availability-zones.html)
+      ImageId: ami-0520e698dd500b1d1 #GET ImageID in "Choose an Amazon Machine Image (AMI)", when you are deploying a EC2
+      InstanceType: t2.micro
